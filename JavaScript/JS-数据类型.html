@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //==会进行类型转换 ===不会进行类型转换
+        {
+            var r = 10;
+            alert(r == "10");
+            alert(r === "10");
+            alert(r === 10);
+        }
+        //字符串转数字
+        {
+            alert(parseInt("114514"));  //114514
+            alert(parseInt("114A514")); //114
+            alert(parseInt("A114514")); //NaN
+        }
+        if(" "){
+            alert("123")
+        }
+        // 0 和 NaN 都是false 其他都是true
+        // 空字符串是false 其他都是true
+        // Null 和 undefined都是false
+    </script>
+</body>
+</html>

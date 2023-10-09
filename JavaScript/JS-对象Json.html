@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-对象Json</title>
+</head>
+<body>
+    JavaScript Object Notation <br>
+    JavaScript 对象标记法<br>
+    多用于数据载体
+
+</body>
+<script>
+    var people = {
+        "name":"nigger",
+        "age":18,
+        "gender":true,
+        "eat": function(){
+            alert("吃饭");
+        },
+        "drink"(){
+            alert("喝水");
+        }
+    }
+
+    var peoplestr = '{"name":"nigger","age":18,"gender":true,"addr":["北京","上海","杭州"]}';
+    var obj = JSON.parse(peoplestr);
+    console.log(obj.addr);
+    console.log(JSON.stringify(obj));
+    console.log(people.drink);
+    console.log(people.eat);
+</script>
+</html>

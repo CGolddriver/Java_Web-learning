@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    Browser object Model
+    <button name="btn">Test</button>
+</body>
+<script>
+    //window:浏览器窗口对象
+    window.alert("hello bom");
+    var ret =  confirm("您确认删除吗");
+    alert(ret);
+    let a = 1;
+    setInterval(function(){     //周期性执行函数
+        console.log("函数执行了"+ a+"次");
+        a++;
+    },2000);
+
+    setTimeout(function(){      //定时执行函数
+        alert("傻逼")
+    },3000) 
+    //Navigator:浏览器对象
+    //screen：屏幕对象
+    //History：历史对象
+    //Location：地址栏对象
+   /*  location.href */
+    alert(location.href);
+    location.href = "https://chat.openai.com/chat";
+    alert(location.href);
+</script>
+</html>

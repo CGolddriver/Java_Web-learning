@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-对象</title>
+</head>
+<body>
+
+</body>
+<script>
+    //数组 array
+    var arr =  new Array(1,2,3,4);
+    var arr1 = [5,6,7,8];
+    alert(arr[0]);
+
+    //长度可变，类型可变
+    arr[10] = 114514;
+    arr[5] = "A";
+    arr[6] = false;
+    console.log(arr[10]);
+
+    arr.push("a");
+    console.log(arr);
+
+    for(let a = 0; a < arr.length;a++){
+        console.log(arr[a]);
+    }
+    console.log("===============");
+    
+    /* arr.forEach(function(e){
+        console.log(e);
+    }) */
+
+    arr.forEach((e)=>{
+        console.log(e);
+    })
+
+    console.log("------------");
+    //splice
+    arr1.splice(2,2);
+    console.log(arr1);
+
+    //字符串string
+    var str = new String(" (^_-)_yachu senpai");
+
+    var str1 = "shabi";
+    //charAt indexOf一致 trim去除字符串两侧空格，substring
+    console.log(str.substring(0,5)); 
+</script>
+</html>

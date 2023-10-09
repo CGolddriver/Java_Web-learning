@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-基础语法</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //var      定义变量
+    //var 作用域大，是全局变量
+    //var 可以重复定义
+    {
+        var a = 10;
+        a = "张三"; 
+        alert(a);
+    }
+        var a = "你爹"
+        alert(a);
+        alert(typeof(a));
+    //let只在代码块内生效,且不能重复定义
+    {
+        let b = 114514;
+        alert(b);
+        alert(typeof(b));
+        alert(typeof true);
+        alert(typeof null); //object
+        let D;
+        alert(typeof D);    //undefined
+    }
+       // alert(b);
+    //const声明只读常量 一旦声明常量的值不能改变
+        const c = 20;
+        alert(c);
+        c = 321;
+        alert(c);
+
+</script>
+</html>

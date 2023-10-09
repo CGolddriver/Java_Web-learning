@@ -1,0 +1,46 @@
+/* 同时存在 ID选择器 高于 类选择器 高于 元素选择器 */
+/* 元素选择 */
+h1{
+    color: aqua;
+}
+a{
+    color: black;
+    text-decoration-style:dashed;
+    font-size: 30px;
+}
+span{
+    color: gray;
+}
+p{
+    text-indent: 20px;  /* 首行缩进 */
+    line-height: 200%;  /* 行高 */
+}
+table{
+    font-style: oblique;
+}
+/* ID 选择 */
+#time{
+    color: rgb(0, 255, 0);
+}
+#name{
+    color: blue;
+    font-style:italic;
+}
+#yuanshen{
+    text-align:center;
+    color: black;
+    font-size: 200%;
+    font-weight: 1000;
+}
+#xuanchuan{
+    text-align: right;
+    color: rgb(255, 0, 0);
+    font-size: 200%;       /* 字号 */
+    font-weight: 1000;
+}
+/* 类选择 */
+.s1{
+    color: darkgreen;
+    font-size: 100px;
+    font-style: oblique;    
+}
